@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import Head from 'next/head'
 import Result from '../components/results';
+import MCTForm from '../components/mctform';
 
 const Home = () => {
   let data = {
@@ -46,11 +48,11 @@ const Home = () => {
 
   return (
     <div>
-
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
-      <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
-
+      <Head>
+        <title>Home</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+      </Head>
 
       <div className="container mx-auto">
 
